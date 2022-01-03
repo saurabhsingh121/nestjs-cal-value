@@ -7,6 +7,15 @@ Content-Type: application/json
     "password": "****"
 }
 
+### Sign in the user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "saurabhsingh@car-value.com",
+    "password": "Welcome@123"
+}
+
 ### Find a particular with given id
 GET http://localhost:3000/auth/3
 
