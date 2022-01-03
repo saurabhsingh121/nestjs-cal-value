@@ -3,7 +3,7 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-    "email": "saurabhsingh@car-value.com",
+    "email": "barakobama@car-value.com",
     "password": "****"
 }
 
@@ -12,15 +12,23 @@ POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-    "email": "saurabhsingh@car-value.com",
-    "password": "Welcome@123"
+    "email": "adamsmith@car-value.com",
+    "password": "****"
 }
+
+### Find the curent user from session
+GET http://localhost:3000/auth/whoami
+
+### Sign out the user
+POST http://localhost:3000/auth/signout
+
+
 
 ### Find a particular with given id
 GET http://localhost:3000/auth/3
 
 ### Find all users with given email
-GET http://localhost:3000/auth?email=golu@singh.com
+GET http://localhost:3000/auth?email=saurabhsingh@car-value.com
 
 ### Delete a particular user with the given id
 DELETE http://localhost:3000/auth/7
