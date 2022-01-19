@@ -13,9 +13,12 @@ Content-Type: application/json
 }
 
 ### Approve a report with its given id
-PATCH  http://localhost:3000/reports/5
+PATCH  http://localhost:3000/reports/1
 Content-Type: application/json
 
 {
-    "approved": true
+    "approved": false
 }
+
+### Get an estimate
+GET http://localhost:3000/reports?make=TATA&model=Indica&year=2014&mileage=37272&lng=0&lat=0
