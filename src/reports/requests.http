@@ -3,22 +3,22 @@ POST http://localhost:3000/reports
 Content-Type: application/json
 
 {
-    "make": "TATA",
-    "model": "Indica",
-    "year": 2014,
-    "mileage": 37272,
-    "lng": 0,
-    "lat": 0,
-    "price": 255265
+    "make": "Honda",
+    "model": "City",
+    "year": 1982,
+    "mileage": 50000,
+    "lng": 45,
+    "lat": 45,
+    "price": 20000
 }
 
 ### Approve a report with its given id
-PATCH  http://localhost:3000/reports/1
+PATCH  http://localhost:3000/reports/4
 Content-Type: application/json
 
 {
-    "approved": false
+    "approved": true
 }
 
 ### Get an estimate
-GET http://localhost:3000/reports?make=TATA&model=Indica&year=2014&mileage=37272&lng=0&lat=0
+GET http://localhost:3000/reports?make=Honda&model=City&year=1980&mileage=50000&lng=45&lat=45

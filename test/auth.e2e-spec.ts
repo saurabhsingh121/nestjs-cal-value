@@ -42,6 +42,6 @@ describe('Authentication System (e2e)', () => {
       .get('/auth/whoami')
       .set('Cookie', cookie)
       .expect(200);
-    expect(body.email).toEqual('email');
+    expect(body.email).toEqual(email);
   });
 });
