@@ -3,11 +3,19 @@ POST http://localhost:3000/reports
 Content-Type: application/json
 
 {
-    "make": "TOYOTA",
-    "model": "Fortuner",
-    "year": 2015,
-    "mileage": 500320,
+    "make": "TATA",
+    "model": "Indica",
+    "year": 2014,
+    "mileage": 37272,
     "lng": 0,
     "lat": 0,
-    "price": 500000
+    "price": 255265
+}
+
+### Approve a report with its given id
+PATCH  http://localhost:3000/reports/5
+Content-Type: application/json
+
+{
+    "approved": true
 }

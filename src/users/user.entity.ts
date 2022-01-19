@@ -16,6 +16,10 @@ export class User {
   id: number;
   @Column()
   email: string;
+
+  @Column({ default: true })
+  admin: boolean;
+
   @Column()
   password: string;
 
