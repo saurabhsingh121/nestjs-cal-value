@@ -1,5 +1,6 @@
 ### Create a new report
-POST http://localhost:3000/reports
+# POST http://localhost:3000/reports
+POST https://calm-sea-34981.herokuapp.com/reports
 Content-Type: application/json
 
 {
@@ -9,11 +10,12 @@ Content-Type: application/json
     "mileage": 50000,
     "lng": 45,
     "lat": 45,
-    "price": 20000
+    "price": 10000
 }
 
 ### Approve a report with its given id
-PATCH  http://localhost:3000/reports/4
+# PATCH  http://localhost:3000/reports/1
+PATCH https://calm-sea-34981.herokuapp.com/reports/3
 Content-Type: application/json
 
 {
@@ -21,4 +23,5 @@ Content-Type: application/json
 }
 
 ### Get an estimate
-GET http://localhost:3000/reports?make=Honda&model=City&year=1980&mileage=50000&lng=45&lat=45
+# GET http://localhost:3000/reports?make=Honda&model=City&year=1980&mileage=50000&lng=45&lat=45
+GET https://calm-sea-34981.herokuapp.com/reports?make=Honda&model=City&year=1980&mileage=50000&lng=45&lat=45

@@ -1,44 +1,54 @@
 ### Create a new user
-POST http://localhost:3000/auth/signup
+#POST http://localhost:3000/auth/signup
+
+POST https://calm-sea-34981.herokuapp.com/auth/signup
 Content-Type: application/json
 
 {
-    "email": "satya@car-value.com",
+    "email": "sundar@car-value.com",
     "password": "****"
 }
 
 ### Sign in the user
-POST http://localhost:3000/auth/signin
+# POST http://localhost:3000/auth/signin
+POST https://calm-sea-34981.herokuapp.com/auth/signin
+Content-Type: application/json
+
+{
+    "email": "sundar@car-value.com",
+    "password": "****"
+}
+
+### Find the curent user from session
+# GET http://localhost:3000/auth/whoami
+GET https://calm-sea-34981.herokuapp.com/auth/whoami
+
+
+### Sign out the user
+# POST http://localhost:3000/auth/signout
+POST https://calm-sea-34981.herokuapp.com/auth/signout
+
+
+
+### Find a particular with given id
+# GET http://localhost:3000/auth/1
+GET https://calm-sea-34981.herokuapp.com/auth/2
+
+### Find all users with given email
+# GET http://localhost:3000/auth?email=satya@car-value.com
+GET https://calm-sea-34981.herokuapp.com/auth?email=satya@car-value.com
+
+### Delete a particular user with the given id
+# DELETE http://localhost:3000/auth/2
+DELETE https://calm-sea-34981.herokuapp.com/auth/1
+
+### Update a user
+
+# PATCH http://localhost:3000/auth/5
+PATCH https://calm-sea-34981.herokuapp.com/auth/1
 Content-Type: application/json
 
 {
     "email": "satya@car-value.com",
     "password": "****"
-}
-
-### Find the curent user from session
-GET http://localhost:3000/auth/whoami
-
-### Sign out the user
-POST http://localhost:3000/auth/signout
-
-
-
-### Find a particular with given id
-GET http://localhost:3000/auth/1
-
-### Find all users with given email
-GET http://localhost:3000/auth?email=satya@car-value.com
-
-### Delete a particular user with the given id
-DELETE http://localhost:3000/auth/7
-
-### Update a user
-
-PATCH http://localhost:3000/auth/5
-Content-Type: application/json
-
-{
-    "email": "saurabhsingh@gmail.com",
-    "password": "!2^*26@@883"
 }
